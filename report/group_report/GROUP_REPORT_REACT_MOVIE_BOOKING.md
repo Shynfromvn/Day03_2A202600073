@@ -1,7 +1,7 @@
 # Group Report: Lab 3 - Production-Grade Agentic System
 
-- **Team Name**: ReAct Movie Booking
-- **Team Members**: Dương Văn Hiệp (2A202600052)
+- **Team Name**: ReAct Movie Booking - A4 - C401
+- **Team Members**: Dương Văn Hiệp (2A202600052), Trịnh Đức Anh (2A202600499), Hoàng Quốc Chung (2A202600070), Nguyễn Minh Quân (2A202600181)
 - **Deployment Date**: 2026-04-06
 
 ---
