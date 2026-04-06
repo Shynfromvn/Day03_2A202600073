@@ -2,6 +2,8 @@
 
 Welcome to Phase 3 of the Agentic AI course! This lab focuses on moving from a simple LLM Chatbot to a sophisticated **ReAct Agent** with industry-standard monitoring.
 
+![Streamlit UI Demo](streamlit/streamlit_demo.jpg)
+
 ## 🚀 Getting Started
 
 ### 1. Setup Environment
@@ -15,8 +17,21 @@ cp .env.example .env
 pip install -r requirements.txt
 ```
 
-### 3. Directory Structure
+### 3. Run Streamlit UI
+Chạy lệnh sau để khởi động giao diện web:
+```bash
+streamlit run streamlit_app.py
+```
+
+### 4. Directory Structure
 - `src/tools/`: Extension point for your custom tools.
+
+## 🤖 3 LLM Providers Supported
+
+Hệ thống hỗ trợ sẵn 3 Provider linh hoạt để chạy Agent:
+1. **OpenAI / GitHub Models (gpt-4o)**: Cho khả năng reasoning xuất sắc nhất.
+2. **Google Gemini (gemini-2.0-flash)**: Phản hồi cực nhanh và support miễn phí qua API.
+3. **Local Phi-3 (CPU)**: Chạy hoàn toàn offline, đảm bảo privacy.
 
 ## 🏠 Running with Local Models (CPU)
 
@@ -41,9 +56,9 @@ LOCAL_MODEL_PATH=./models/Phi-3-mini-4k-instruct-q4.gguf
 
 1.  **Baseline Chatbot**: Observe the limitations of a standard LLM when faced with multi-step reasoning.
 2.  **ReAct Loop**: Implement the `Thought-Action-Observation` cycle in `src/agent/agent.py`.
-3.  **Provider Switching**: Swap between OpenAI and Gemini seamlessly using the `LLMProvider` interface.
+3.  **Provider Switching**: Swap between the 3 providers seamlessly using the `LLMProvider` interface.
 4.  **Failure Analysis**: Use the structured logs in `logs/` to identify why the agent fails (hallucinations, parsing errors).
-5.  **Grading & Bonus**: Follow the [SCORING.md](file:///Users/tindt/personal/ai-thuc-chien/day03-lab-agent/SCORING.md) to maximize your points and explore bonus metrics.
+5.  **Grading & Bonus**: Follow the `SCORING.md` to maximize your points and explore bonus metrics.
 
 ## 🛠️ How to Use This Baseline
 The code is designed as a **Production Prototype**. It includes:
